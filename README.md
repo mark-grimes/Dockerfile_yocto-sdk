@@ -19,3 +19,15 @@ Currently provides the toolchain for Yocto 2.5 for the following architectures:
 * cortexa8hf
 
 The Dockerfile for each of these is in the relevant directory, the tag on docker hub matches the name.
+
+## Usage
+
+Start a container and you will have a shell. Before doing anything else you will need to source the
+environment script:
+
+```
+source /opt/poky/2.5/environment-setup-<arch>-poky-linux-gnueabi
+```
+
+You should then have CMake available, and the correct compiler commands stored in the $CC and $CXX
+variables. When using CMake, it automatically uses the compiler referenced in those variables.

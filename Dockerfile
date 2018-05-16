@@ -10,7 +10,7 @@ RUN curl -fsSL get.docker.com -o get-docker.sh \
     && CHANNEL="stable" ./get-docker.sh \
     && rm ./get-docker.sh
 
-RUN curl -L http://downloads.yoctoproject.org/releases/yocto/yocto-2.4.2/toolchain/x86_64/poky-glibc-x86_64-core-image-sato-cortexa8hf-neon-toolchain-2.4.2.sh -o install.sh \
+RUN curl -L http://downloads.yoctoproject.org/releases/yocto/yocto-2.5/toolchain/x86_64/poky-glibc-x86_64-core-image-sato-cortexa8hf-neon-toolchain-2.5.sh -o install.sh \
     && chmod u+x /install.sh \
     && /install.sh \
     && rm /install.sh

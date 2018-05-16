@@ -11,3 +11,11 @@ argument, i.e. `xldd --root /opt/poky/2.4.2/sysroots/cortexa8hf-neon-poky-linux-
 Also useful (but not included) is the
 [extractDynamicLibs.sh](https://github.com/mark-grimes/Dockerfiles/blob/master/extractDynamicLibs.sh)
 script which can pull out those libraries into a single directory for addition to the docker image.
+
+Currently provides the toolchain for Yocto 2.5 for the following architectures:
+
+* aarch64
+* armv5e
+* cortexa8hf
+
+The Dockerfile for each of these is in the relevant directory, the tag on docker hub matches the name.
